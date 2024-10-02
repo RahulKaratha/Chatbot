@@ -1,0 +1,57 @@
+# Virtual environment
+venv/
+rasa_venv/
+
+# Rasa project files
+models/
+logs/
+__pycache__/
+data/nlu.yml
+data/rules.yml
+data/stories.yml
+data/credentials.yml
+data/domain.yml
+data/config.yml
+data/endpoints.yml
+data/*.json
+data/*.md
+
+# Rasa actions
+actions/__pycache__/
+actions/*.pyc
+actions/*.pyo
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Pytest cache
+.cache
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating system specific files
+.DS_Store
+Thumbs.db
