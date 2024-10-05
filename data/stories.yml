@@ -1,30 +1,90 @@
 version: "3.1"
 
 stories:
+  - story: Greet User
+    steps:
+      - intent: greet
+      - action: utter_greet
 
-- story: happy path
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_great
-  - action: utter_happy
+  - story: Ask about Food
+    steps:
+      - intent: food_ques
+      - action: action_food_question
+      - action: utter_food_ans
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
+  - story: Plan a Date
+    steps:
+      - intent: plan_path
+      - action: plan_response
+      - action: utter_plan_ans
 
-- story: sad path 2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: deny
-  - action: utter_goodbye
+  - story: Cheer Up User
+    steps:
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+
+  - story: Help Request
+    steps:
+      - intent: help_ques
+      - action: respond_help
+      - action: utter_help
+
+  - story: Express Great Mood
+    steps:
+      - intent: mood_great
+      - action: utter_happy
+
+  - story: Say Goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  - story: Ask Generic Question
+    steps:
+      - intent: generic_ques
+      - action: utter_generic
+
+  - story: Bot Challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  - story: Affirm Response
+    steps:
+      - intent: affirm
+      - action: utter_happy
+
+  - story: Deny Response
+    steps:
+      - intent: deny
+      - action: utter_disappointed
+
+  - story: Ask about Day
+    steps:
+      - intent: ask_about_day
+      - action: utter_generic
+
+  - story: Share Memories
+    steps:
+      - intent: share_memories
+      - action: utter_generic
+
+  - story: Discuss Future
+    steps:
+      - intent: discuss_future
+      - action: utter_generic
+
+  - story: Playful Tease
+    steps:
+      - intent: playful_tease
+      - action: utter_generic
+
+  - story: Give Compliment
+    steps:
+      - intent: compliment
+      - action: utter_generic
+
+  - story: Express Love
+    steps:
+      - intent: express_love
+      - action: utter_love

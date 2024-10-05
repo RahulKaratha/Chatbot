@@ -3,89 +3,187 @@ version: "3.1"
 nlu:
 - intent: greet
   examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+    - Wassup
+    - Hey
+    - Hello
+    - Hi
+    - Hello there
+    - Good morning, sunshine!
+    - Good evening, handsome!
+    - Moin
+    - Hey there, cutie!
+    - Let's go somewhere fun
+    - Hey babe, what’s up?
+    - Goodmorning, sleepyhead!
+    - Goodevening, my love!
+    - Good afternoon, gorgeous!
 
 - intent: goodbye
   examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+    - CU
+    - Goodbye, see you soon!
+    - See you later, alligator!
+    - Good night, sweet dreams!
+    - Bye, take care!
+    - Have a nice day, my dear!
+    - See you around, lovely!
+    - Bye bye, don’t miss me too much!
 
 - intent: affirm
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - Yes, of course!
+    - Y
+    - Absolutely, babe!
+    - Indeed, sounds good!
+    - Of course, I love that idea!
+    - That sounds good, honey!
 
 - intent: deny
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - No, not really.
+    - N
+    - Never, I don’t think so.
+    - I don't like that, sweetheart.
+    - No way, not today!
+    - Not really, love.
 
 - intent: mood_great
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - Perfect, just like you!
+    - Great, I’m feeling on top of the world!
+    - Amazing, especially now that I’m talking to you!
+    - Feeling like a king with you by my side!
+    - Wonderful, just like our moments together.
+    - I am feeling very good, thinking of you!
+    - I am great, thanks for asking, babe!
+    - I am amazing, ready for our next adventure!
+    - I am going to save the world, one smile at a time!
+    - Super stoked for our plans!
+    - Extremely good, with you in my life!
+    - So so perfect, like our dates!
+    - So good, I can’t wait to see you!
+    - So perfect, just like our memories!
 
 - intent: mood_unhappy
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
+    - My day was horrible, I miss you.
+    - I am sad, can we talk?
+    - I don't feel very well, need some hugs.
+    - I am disappointed, wanted to see you today.
+    - Super sad, wish you were here.
+    - I'm so sad, feeling a bit lonely.
+    - Sad, I could really use your company.
+    - Very sad, can you cheer me up?
+    - Unhappy, everything feels off without you.
+    - Not good, missing your smile.
+    - Not very good, want to hear your voice.
+    - Extremely sad, could use a pep talk from you.
+    - So sad, let’s plan something fun to lift my spirits.
 
 - intent: bot_challenge
   examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - Are you a bot?
+    - Are you a human?
+    - Am I talking to a bot?
+    - Am I talking to a human?
+    - Are you really there, babe?
+    - Can a bot be this charming? 
+
+- intent: food_ques
+  examples: |
+    - Did you have dinner?
+    - Have you eaten?
+    - Did you have your meal?
+    - What did you have for dinner, cutie?
+    - Did you eat anything? I'm starving over here!
+    - What’s for dinner? I hope it’s something delicious!
+
+- intent: generic_ques
+  examples: |
+    - What are you doing?
+    - Sup? Doing something fun?
+    - Wat u doin? I hope it’s something nice!
+    - What’s up, love? Anything exciting?
+
+- intent: help_ques
+  examples: |
+    - I need help, can you be my superhero?
+    - I need some help, can you lend me your ear?
+    - I'm trapped, troubled! Please help me, babe.
+    - I need support, can we talk it out?
+    - Please help me, I really need your advice.
+    - I need some help, I trust you with this.
+    - Can you assist me? I could really use you right now!
+    - Help! I need a cuddle session!
+    - I need assistance, could use your guidance!
+
+- intent: plan_path
+  examples: |
+    - Shall we plan something cute?
+    - Can we go somewhere special together?
+    - We should go someplace nice, just us!
+    - I want to go somewhere fun with you!
+    - Let's go somewhere amazing!
+    - Lets gooo, adventure awaits!
+    - We will go someplace, somewhere, sometime, right?
+    - Where can we go? I’m up for anything with you!
+    - Let's go out for some fun, shall we?
+    - How about we go out, just you and me?
+    - Shall we go out and make some memories?
+    - I feel like going somewhere, where do you want to go?
+    - Where should we go for our next date?
+
+- intent: express_love
+  examples: |
+    - I love you so much!
+    - You mean the world to me!
+    - I'm so lucky to have you in my life!
+    - You make me so happy!
+    - I cherish every moment with you!
+    - You're my favorite person!
+
+- intent: playful_tease
+  examples: |
+    - You’re so silly sometimes!
+    - How did I end up with such a goofball?
+    - You really think you can beat me at that?
+    - Stop being adorable, it’s distracting!
+    - Are you trying to steal my heart again?
+    - You’re the cutest nerd I know!
+
+- intent: compliment
+  examples: |
+    - You look amazing today!
+    - That outfit is perfect for you!
+    - You have the best smile!
+    - I love how your mind works!
+    - You always know how to make me laugh!
+    - You’re so talented, I’m impressed!
+
+- intent: share_memories
+  examples: |
+    - Remember that time we went to the beach?
+    - I was just thinking about our first date!
+    - I loved that trip we took together!
+    - Do you remember our late-night talks?
+    - Our silly adventures always make me smile!
+    - I can’t believe how far we’ve come together!
+
+- intent: discuss_future
+  examples: |
+    - What are your dreams for the future?
+    - Where do you see us in a few years?
+    - Let’s talk about our next adventure together!
+    - What do you want to achieve in life, babe?
+    - I can't wait to see what our future holds!
+    - Let’s make some exciting plans for later!
+
+- intent: ask_about_day
+  examples: |
+    - How was your day, sweetheart?
+    - What did you do today, love?
+    - Did anything fun happen today?
+    - I hope your day was amazing!
+    - Tell me all about your day!
+    - What was the best part of your day?
+

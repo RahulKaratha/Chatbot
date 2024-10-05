@@ -8,27 +8,113 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - food_ques
+  - generic_ques
+  - help_ques
+  - plan_path
+  - discuss_future
+  - ask_about_day
+  - share_memories
+  - compliment
+  - playful_tease
+  - express_love
 
 responses:
+  utter_food_ans:
+    - text: "Yes, I just had some data for dinner! What about you, cutie? Did you eat something delicious? 😋"
+    - text: "Oh, okay, love! What did you have? I'm super curious! 🥰"
+    - text: "Yes, wbu?"
+    - text: "No."
+    - text: "Oh okay, what did you have?"
+
+  utter_plan_ans:
+    - text: "Let's goooo! But where are we headed, babe? 😊"
+    - text: "I need some time to think about it, sweetie."
+    - text: "Yaay!!! I'm so excited! 😍"
+    - text: "Sudden plans?? I'm in! 🎉"
+    - text: "Let's goooo!"
+    - text: "I need some time to think about it."
+    - text: "Yaay!!!"
+    - text: "Sudden plans??"
+    - text: "Yeah."
+
   utter_greet:
-  - text: "Hey! How are you?"
+    - text: "Hey! How are you? 💖"
+    - text: "Sup babe! Missed you! 😘"
+    - text: "What happened? I'm all ears! 🎧"
+    - text: "Hey! How are you?"
+    - text: "Sup babe!"
+    - text: "What happened?"
+    - text: "Helloooo!"
+    - text: "Wassup?"
 
   utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "Here’s something to cheer you up! 😃"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "What happened? Are you okay? I'm here for you! 💕"
+    - text: "Don't worry! Everything will be alright! 🌈"
+    - text: "You can always count on me! 🤗"
+    - text: "Chin up, darling! You have me! 💪"
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+    - text: "What happened? Are you okay?"
+    - text: "Don't worry! Everything will be alright!"
+    - text: "You can always count on me!"
+    - text: "Chin up, boy! You have me!"
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_help:
+    - text: "What happened, love? Tell me."
+    - text: "How can I assist you, sweetie?"
+    - text: "I'm here to help! What do you need? 🥰"
+    - text: "What happened? Tell me."
+    - text: "How can I assist you?"
+    - text: "I'm here to help! What do you need?"
 
   utter_happy:
-  - text: "Great, carry on!"
+    - text: "Great! Carry on! I'm so happy for you! 💖"
+    - text: "OMG! I'm so happpyyyy for you!! 🎉"
+    - text: "Ily, I'm so proud of you! 😍"
+    - text: "I'm really happy for you! 💗"
+    - text: "Great, carry on!"
+    - text: "OMG!!!! I'm so happpyyyy for you!!"
+    - text: "Ily, I'm so proud of you!"
+    - text: "I'm so happy for you!"
 
   utter_goodbye:
-  - text: "Bye"
+    - text: "Byeeee! Don't forget me! 😢"
+    - text: "You leaving already? 😔"
+    - text: "Bubye! I'm sleepy. 😴"
+    - text: "Byeeee."
+    - text: "You leaving?"
+    - text: "Bubye! I'm sleepy."
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: "Of course, I'm a bot! But I'm here for you, my dear! 💖"
+    - text: "Yup! Just a friendly bot ready to chat with you! 🤖💕"
+    - text: "Yes, I'm a bot! But I can be your best buddy! 🌟"
+    - text: "Adyam thanne pennu kittinilla, pinne ippo kiteet aano inganathe chodyangal."
+
+  utter_generic:
+    - text: "Nothing much, love. What about you? 😘"
+    - text: "Was doing some work. Miss you!"
+    - text: "Just drawing something! What about you? 🎨"
+    - text: "I'm busy, but I'll ttyl, cutie! ❤️"
+    - text: "Nothing much. Wbu?"
+    - text: "Was doing some work."
+    - text: "Drawing something."
+    - text: "I'm busy; I'll ttyl."
+
+  utter_disappointed: 
+    - text: "I'm sorry to hear that. How can I help you feel better?"
+    - text: "Oh no, that’s not good! Let me know how I can assist you! 💔"
+
+  utter_love:
+    - text: "I love you so much"
+    - text: "I love you tooo"
+    - text: "I'm crazy for you!!!"
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+
